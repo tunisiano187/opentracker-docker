@@ -1,5 +1,5 @@
-# opentracker-docker 
-[![Docker Pulls](https://img.shields.io/docker/pulls/tunisiano187/opentracker-docker.svg?maxAge=2592000&style=flat-square)](https://hub.docker.com/r/tunisiano187/opentracker-docker/) [![Docker Stars](https://img.shields.io/docker/stars/tunisiano187/opentracker-docker.svg?maxAge=2592000&style=flat-square)](https://hub.docker.com/r/tunisiano187/opentracker-docker/)  [![license](https://img.shields.io/github/license/tunisiano187/opentracker-docker.svg?maxAge=2592000&style=flat-square)](https://github.com/tunisiano187/opentracker-docker/blob/master/LICENSE) [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badge/)
+# opentracker-docker (Update without rebuild)
+[![license](https://img.shields.io/github/license/tunisiano187/opentracker-docker.svg?maxAge=2592000&style=flat-square)](https://github.com/tunisiano187/opentracker-docker/blob/master/LICENSE) [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badge/)
 
 
 With this repo you can easily run your own instance of the opentracker for bitorrent.
@@ -7,6 +7,7 @@ With this repo you can easily run your own instance of the opentracker for bitor
 ## How to run an _open_ opentracker
 If you want to run a complete open tracker, just pull the docker image and start up a container:
 
+`docker pull ghcr.io/tunisiano187/opentracker-docker:master`
 `docker run -d --name opentracker -p 6969:6969/udp -p 6969:6969 tunisiano187/opentracker-docker`
 
 This will bind the port `6969` to the docker container (UDP and TCP) and you're good to go.

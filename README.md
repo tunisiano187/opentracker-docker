@@ -8,6 +8,7 @@ With this repo you can easily run your own instance of the opentracker for bitor
 If you want to run a complete open tracker, just pull the docker image and start up a container:
 
 `docker pull ghcr.io/tunisiano187/opentracker-docker:master`
+
 `docker run -d --name opentracker -p 6969:6969/udp -p 6969:6969 tunisiano187/opentracker-docker`
 
 This will bind the port `6969` to the docker container (UDP and TCP) and you're good to go.

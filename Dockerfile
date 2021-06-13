@@ -1,6 +1,6 @@
 FROM alpine
 
-MAINTAINER Lednerb <code@lednerb.de>
+MAINTAINER Tunisiano187 <helpdesk.choc@gmail.com>
 
 WORKDIR /tmp
 
@@ -27,6 +27,7 @@ RUN apk add --no-cache \
 	&& apk del gcc g++ make git cvs zlib-dev \
 	&& rm -rf /var/cache/apk/* /tmp/* 
 
+VOLUME /etc/opentracker
 COPY ./opentracker.conf /etc/opentracker/opentracker.conf
 COPY ./whitelist.txt	/etc/opentracker/whitelist.txt
 COPY ./blacklist.txt	/etc/opentracker/blacklist.conf
